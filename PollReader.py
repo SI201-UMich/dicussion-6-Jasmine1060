@@ -107,7 +107,7 @@ class PollReader():
         harris_sum = 0
         trump_sum = 0 
         count = 0 
-
+#counts which samples are likely, and then it counts it
         for i in range(len(self.data_dict['sample type'])):
             if self.data_dict['sample type'][i] == 'LV':
                 harris_sum += self.data_dict['Harris result'][i]
